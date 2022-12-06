@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.375rem 6.25rem;
+
+  &__image {
+    width: 8.2rem;
+    height: 2.375rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+    a {
+      font-family: $syne;
+      font-weight: 400;
+      font-size: 1rem;
+      padding: 0.4rem;
+      border-radius: 0.4rem;
+      transition: all 200ms ease;
+
+      &:hover {
+        background: $primary-color-light;
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    > input {
+      position: relative;
+      width: fit-content;
+      padding: 0.6rem 0.2rem 0.6rem 2.5rem;
+      border: none;
+      border-radius: 2rem;
+      outline: none;
+      background: rgba(0, 0, 0, 0.06);
+
+      + img {
+        position: absolute;
+        font-size: 0.875rem;
+        margin-left: 0.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: $white;
+  color: $text-color;
+  font-family: $montserrat;
+}
+
+a {
+  color: $text-color;
+}
+
+.btn {
+  background: $primary-color;
+  color: $white;
+  padding: 1rem;
+  border-radius: 0.3125rem;
+}
