@@ -17,7 +17,7 @@
     </head>
 
     <body>
-      <header class="header">
+      <header class="header padding__lg">
         <img class="header__image" src="./images/logo.svg" alt="Logo Image">
 
         <nav class="header__nav">
@@ -28,7 +28,7 @@
         </nav>
 
         <div class="header__cta">
-          <input type="text" name="search">
+          <input type="text" name="search" placeholder="press enter to search...">
           <img src="./icons/search-normal.svg" alt="search">
           <a class="btn" href="#">
             connect wallet
@@ -36,6 +36,359 @@
         </div>
       </header>
 
+      <section class="hero padding__lg">
+        <div class="hero__details">
+          <h1>
+            Explore, Collect and Sell Treasured NFTs Worldwide
+          </h1>
+
+          <p>
+            A platform where buyers and sellers can exchange unique artwork from over 1000 artists
+          </p>
+
+          <div class="hero__details__button">
+            <a class="btn" href="">Explore</a>
+            <a class="btn__transparent" href="">Create NFT</a>
+          </div>
+
+          <div class="hero__details__rating">
+            <div class="hero__details__rating__details">
+              <h2>100k</h2>
+              <p>Collections</p>
+            </div>
+
+            <div class="hero__details__rating__details">
+              <h2>756k</h2>
+              <p>Active users</p>
+            </div>
+
+            <div class="hero__details__rating__details">
+              <h2>10k</h2>
+              <p>Auctions</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <article class="hero__image__card">
+            <img src="./images/asset 1.png" alt="hero image1">
+
+            <div class="hero__image__card__owner">
+              <div class="hero__image__card__owner__profile">
+                <img src="./images/hero1.png" alt="owner">
+                <p>Abstract painting <br> by <strong>Amygrace</strong></p>
+              </div>
+
+              <p>Current bid <br> <strong>13 Eth</strong></p>
+            </div>
+
+            <div class="hero__image__card__bid">
+              <div class="hero__image__card__bid__time">
+                <p>Remaining time</p>
+                <p id="heroBid"></p>
+              </div>
+
+              <a class="btn__transparent" href="#" target="_blank">
+                place bid
+              </a>
+            </div>
+          </article>
+
+          <div class="hero__image__arrow">
+            <img src="./icons/arrow.jpg" alt="arrow">
+  
+            <img src="./icons/arrow.jpg" alt="arrow">
+          </div>
+        </div>
+
+        <a href="#" id="BTT">
+          <img src="./icons/arrow.jpg" alt="back to top">
+
+          <h3>Back to Top</h3>
+        </a>
+      </section>
+
+      <section class="partners">
+        <h2>Our Partners & investors</h2>
+        
+        <div class="partners__logo">
+          <img src="./images/coinex.png" alt="coinex">
+          <img src="./images/coinbase.png" alt="coinbase">
+          <img src="./images/binance.png" alt="binance">
+          <img src="./images/changelly.png" alt="changelly">
+          <img src="./images/bitmex.png" alt="bitmex">
+          <img src="./images/trezor.png" alt="trezor">
+          <img src="./images/Deribit.png" alt="Deribit">
+          <img src="./images/blockchain.png" alt="blockchain">
+          <img src="./images/robinhood.png" alt="robinhood">
+          <img src="./images/huobi.png" alt="huobi">
+        </div>
+      </section>
+
+      <section class="collections padding__lg">
+        <div class="collections__heading">
+          <h2>Best Artwork <br>Collections</h2>
+
+          <a href="" class="btn">See all artworks</a>
+        </div>
+
+        <div class="collections__content">
+          <article class="collections__content__card">
+            <img src="./images/asset 3.png" alt="asset3">
+
+            <div class="collections__content__card__artist">
+              <p>Abstract painting <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid1"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset1"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+
+          <article class="collections__content__card">
+            <img src="./images/asset 4.png" alt="asset4">
+
+            <div class="collections__content__card__artist">
+              <p>Dart Vader <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid2"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset2"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+
+          <article class="collections__content__card">
+            <img src="./images/asset 5.png" alt="asset5">
+
+            <div class="collections__content__card__artist">
+              <p>Abstract painting <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid1"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset1"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+
+          <article class="collections__content__card">
+            <img src="./images/asset 6.png" alt="asset6">
+
+            <div class="collections__content__card__artist">
+              <p>Abstract painting <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid1"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset1"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+
+          <article class="collections__content__card">
+            <img src="./images/asset 7.png" alt="asset7">
+
+            <div class="collections__content__card__artist">
+              <p>Abstract painting <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid1"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset1"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+
+          <article class="collections__content__card">
+            <img src="./images/asset 8.png" alt="asset8">
+
+            <div class="collections__content__card__artist">
+              <p>Abstract painting <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid1"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset1"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+
+          <article class="collections__content__card">
+            <img src="./images/asset 9.png" alt="asset9">
+
+            <div class="collections__content__card__artist">
+              <p>Abstract painting <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid1"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset1"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+
+          <article class="collections__content__card">
+            <img src="./images/asset 10.png" alt="asset10">
+
+            <div class="collections__content__card__artist">
+              <p>Abstract painting <br><strong>@amygrace</strong></p>
+              <p class="soldout"><strong>14 sold out</strong></p>
+            </div>
+
+            <div class="collections__content__card__details">
+              <div>
+                <p>Current Bid</p>
+                <p id="bid1"></p>
+              </div>
+
+              <div>
+                <p>Remaining time</p>
+                <p id="asset1"></p>
+              </div>
+            </div>
+
+            <a class="btn__transparent" href="#" target="_blank">
+              place bid
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="explore padding__lg">
+        <h2>Explore the best <br>NFT asset</h3>
+
+        <div class="explore__options">
+          <a class="btn__transparent active" href="#">
+            All Categories
+          </a>
+          <a class="btn__transparent" href="#">
+            Anime
+          </a>
+          <a class="btn__transparent" href="#">
+            Music
+          </a>
+          <a class="btn__transparent" href="#">
+            Photography
+          </a>
+          <a class="btn__transparent" href="#">
+            Art
+          </a>
+          <a class="btn__transparent" href="#">
+            Collectibles
+          </a>
+          <a class="btn__transparent" href="#">
+            Memes
+          </a>
+          <a class="btn__transparent" href="#">
+            Sculpture
+          </a>
+        </div>
+
+        <div class="explore__assets">
+          <img src="./images/asset 11.png" alt="asset11">
+          <img src="./images/asset 12.png" alt="asset12">
+          <img src="./images/asset 13.png" alt="asset13">
+          <img src="./images/asset 14.png" alt="asset14">
+          <img src="./images/asset 15.png" alt="asset15">
+          <img src="./images/asset 16.png" alt="asset16">
+
+          <div class="explore__assets__divided">
+            <img src="./images/asset 17.png" alt="asset17">
+            <img src="./images/asset 18.png" alt="asset18">
+          </div>
+          
+          <img src="./images/asset 19.png" alt="asset19">
+
+          <div class="explore__assets__divided">
+            <img src="./images/asset 20.png" alt="asset20">
+            <img src="./images/asset 21.png" alt="asset21">
+          </div>
+          
+          <img src="./images/asset 22.png" alt="asset22">
+        </div>
+      </section>
+      <script src="./App.js/script.js"></script>
     </body>
     
   </html>

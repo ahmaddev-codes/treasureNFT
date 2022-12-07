@@ -10,6 +10,7 @@ body {
   background-color: $white;
   color: $text-color;
   font-family: $montserrat;
+  overflow-x: hidden;
 }
 
 a {
@@ -19,6 +20,17 @@ a {
 .btn {
   background: $primary-color;
   color: $white;
-  padding: 1rem;
   border-radius: 0.3125rem;
+}
+
+.btn__transparent {
+  background: transparent;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 0.3125rem;
+}
+
+.padding__lg {
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
 }

@@ -1,0 +1,27 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 8.3125rem;
+
+  h2 {
+    font-family: $syne;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  &__logo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 2.5rem;
+
+    img {
+      width: 9.4375rem;
+      height: 2.5625rem;
+    }
+  }
+}

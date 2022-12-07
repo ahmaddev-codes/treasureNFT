@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4.375rem 6.25rem;
+  padding-top: 4.375rem ;
+  padding-bottom: 4.375rem;
 
   &__image {
     width: 8.2rem;
@@ -13,18 +14,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 1.5rem;
 
     a {
-      font-family: $syne;
-      font-weight: 400;
+      position: relative;
+      font-family: $montserrat;
+      font-weight: 500;
       font-size: 1rem;
       padding: 0.4rem;
       border-radius: 0.4rem;
       transition: all 200ms ease;
 
-      &:hover {
-        background: $primary-color-light;
+      &:hover::before {
+        position: absolute;
+        content: "";
+        width: 10%;
+        height: 0.135rem;
+        left: 0;
+        right: 0;
+        bottom: -1rem;
+        background: $primary-color;
+        animation: sweep 900ms ease forwards;
       }
     }
   }
@@ -37,18 +47,32 @@
 
     > input {
       position: relative;
-      width: fit-content;
-      padding: 0.6rem 0.2rem 0.6rem 2.5rem;
+      width: 12rem;
+      height: 2.5rem;
+      padding: 0.6rem 0.2rem 0.6rem 3rem;
       border: none;
       border-radius: 2rem;
       outline: none;
       background: rgba(0, 0, 0, 0.06);
+      font-size: 0.875rem;
+      font-family: $montserrat;
+      color: $text-color;
+
+      &::placeholder {
+        font-size: 0.875rem;
+        color: rgba(0, 0, 0, 0.253);
+        font-family: $montserrat;
+      }
 
       + img {
         position: absolute;
         font-size: 0.875rem;
-        margin-left: 0.4rem;
+        padding: 0.2rem 0.5rem;
       }
+    }
+
+    a {
+      padding: 1rem;
     }
   }
 }
