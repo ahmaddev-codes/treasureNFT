@@ -39,10 +39,6 @@
       gap: 0.875rem;
       border-radius: 0.625rem;
 
-      *p {
-        font-size: 0.875rem;
-      }
-
       img {
         width: 100%;
         height: auto;
@@ -55,6 +51,11 @@
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
+
+        p {
+          font-size: 0.875rem;
+          margin-bottom: 0.575rem;
+        }
       }
 
       &__details {
@@ -63,6 +64,20 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+
+        div {
+
+          p {
+            font-size: 0.875rem;
+            margin-bottom: 0.575rem;
+
+            &:last-child {
+              font-size: 0.775rem;
+              color: $primary-color;
+              font-weight: 600;
+            }
+          }
+        }
       }
 
       a {

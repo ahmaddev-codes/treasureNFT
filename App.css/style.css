@@ -353,9 +353,6 @@ a {
   gap: 0.875rem;
   border-radius: 0.625rem;
 }
-.collections__content__card * p {
-  font-size: 0.875rem;
-}
 .collections__content__card img {
   width: 100%;
   height: auto;
@@ -368,12 +365,25 @@ a {
   justify-content: space-between;
   width: 100%;
 }
+.collections__content__card__artist p {
+  font-size: 0.875rem;
+  margin-bottom: 0.575rem;
+}
 .collections__content__card__details {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+.collections__content__card__details div p {
+  font-size: 0.875rem;
+  margin-bottom: 0.575rem;
+}
+.collections__content__card__details div p:last-child {
+  font-size: 0.775rem;
+  color: #E63875;
+  font-weight: 600;
 }
 .collections__content__card a {
   width: 100%;
@@ -445,4 +455,63 @@ a {
 .active {
   background: #E63875;
   color: #fff;
+}
+
+.createNFT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  text-align: center;
+  user-select: none;
+}
+.createNFT h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.createNFT p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+.createNFT__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+.createNFT__cards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #263238;
+  gap: 2rem;
+  border-radius: 0.675rem;
+  text-align: center;
+  border: 1px solid #E63875;
+  transition: all 300ms ease;
+}
+.createNFT__cards__card:hover {
+  background: #E63875;
+  color: #fff;
+}
+.createNFT__cards__card img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.createNFT__cards__card h4 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.createNFT__cards__card p {
+  margin-bottom: 0;
 }
