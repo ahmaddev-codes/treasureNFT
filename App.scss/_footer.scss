@@ -4,6 +4,7 @@
   align-items: flex-start;
   padding-top: 4.5rem;
   padding-bottom: 6rem;
+  user-select: none;
 
   &__main {
     display: flex;
@@ -15,6 +16,13 @@
 
     p {
       line-height: 1.65rem;
+    }
+
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
     }
   }
 
@@ -30,8 +38,12 @@
       justify-content: space-between;
       gap: 1rem;
 
+      h4 {
+        margin-bottom: 1rem;
+      }
+
       a {
-        font-size: 1rem;
+        font-size: 0.875rem;
 
         &:hover {
           font-weight: 500;

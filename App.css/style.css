@@ -289,10 +289,6 @@ a {
   scroll-behavior: smooth;
   z-index: 2;
 }
-#BTT:hover h3 {
-  background: #E63875;
-  color: #fff;
-}
 #BTT img {
   width: 1.5rem;
   height: 1.5rem;
@@ -617,6 +613,7 @@ a {
   --webkit-backdrop-filter: blur(15px);
   background-size: cover;
   background: rgba(232, 217, 246, 0.83);
+  user-select: none;
 }
 .newsletter img {
   width: 23rem;
@@ -666,6 +663,7 @@ a {
   align-items: flex-start;
   padding-top: 4.5rem;
   padding-bottom: 6rem;
+  user-select: none;
 }
 .footer__main {
   display: flex;
@@ -677,6 +675,12 @@ a {
 }
 .footer__main p {
   line-height: 1.65rem;
+}
+.footer__main__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 .footer__links {
   display: grid;
@@ -690,8 +694,11 @@ a {
   justify-content: space-between;
   gap: 1rem;
 }
+.footer__links__link h4 {
+  margin-bottom: 1rem;
+}
 .footer__links__link a {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 .footer__links__link a:hover {
   font-weight: 500;

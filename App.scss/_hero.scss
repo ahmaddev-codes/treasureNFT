@@ -184,14 +184,6 @@
   scroll-behavior: smooth;
   z-index: 2;
 
-  &:hover {
-
-    h3 {
-      background: $primary-color;
-      color: $white;
-    }
-  }
-
   img {
     width: 1.5rem;
     height: 1.5rem;

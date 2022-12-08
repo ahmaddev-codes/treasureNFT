@@ -7,6 +7,7 @@
   --webkit-backdrop-filter: blur(15px);
   background-size: cover;
   background: rgba(232, 217, 246, 0.83);
+  user-select: none;
 
   img {
     width: 23rem;
