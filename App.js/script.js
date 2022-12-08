@@ -222,3 +222,9 @@ var x = setInterval(function() {
 
 // Bid 1
 
+
+// Newsletter Submission Message
+
+function Message() {
+  alert("Your mail was successfully submitted");
+}

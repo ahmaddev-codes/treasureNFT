@@ -38,9 +38,25 @@ a {
   border-radius: 0.3125rem;
 }
 
-.padding__lg {
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
+@media (max-width: 39.9375em) {
+  .padding__sm {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .padding__md {
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .padding__lg {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
 }
 
 .header {
@@ -271,6 +287,7 @@ a {
   bottom: 10rem;
   right: -1rem;
   scroll-behavior: smooth;
+  z-index: 2;
 }
 #BTT:hover h3 {
   background: #E63875;
@@ -514,4 +531,168 @@ a {
 }
 .createNFT__cards__card p {
   margin-bottom: 0;
+}
+
+.topartists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  user-select: none;
+}
+.topartists h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.topartists p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 7rem;
+}
+.topartists__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.topartists__cards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 0.675rem;
+  padding: 1.25rem;
+  backdrop-filter: blur(12px);
+  --webkit-backdrop-filter: blur(12px);
+  border-radius: 0.875rem;
+  background-image: url("../images/asset 3.png");
+  background-size: cover;
+}
+.topartists__cards__card:nth-of-type(2) {
+  background-image: url("../images/asset 8.png");
+}
+.topartists__cards__card:nth-of-type(3) {
+  background-image: url("../images/asset 12.png");
+}
+.topartists__cards__card img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-top: -4rem;
+}
+.topartists__cards__card__details {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  gap: 4rem;
+}
+.topartists__cards__card__details__text h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.topartists__cards__card__details__text p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.topartists__cards__card__details a {
+  padding: 0.625rem 1.25rem;
+  background: #fff;
+  border-radius: 0.3125rem;
+  color: #E63875;
+  font-weight: 500;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-image: url("../images/newsletter_avatar.png");
+  backdrop-filter: blur(15px);
+  --webkit-backdrop-filter: blur(15px);
+  background-size: cover;
+  background: rgba(232, 217, 246, 0.83);
+}
+.newsletter img {
+  width: 23rem;
+  height: 23rem;
+  margin-left: 5rem;
+}
+.newsletter__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+.newsletter__details h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.newsletter__details p {
+  padding-bottom: 1rem;
+  line-height: 1.65rem;
+}
+.newsletter__details form input {
+  width: 17rem;
+  padding: 0.5rem;
+  border: 1px solid #263238;
+  border-radius: 0.275rem;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+.newsletter__details form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.newsletter__details form button {
+  padding: 0.5rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  background: #E63875;
+  color: #fff;
+  border: 2px solid #E63875;
+  outline: none;
+  border-radius: 0.275rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: flex-start;
+  padding-top: 4.5rem;
+  padding-bottom: 6rem;
+}
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding-right: 10rem;
+}
+.footer__main p {
+  line-height: 1.65rem;
+}
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.footer__links__link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.footer__links__link a {
+  font-size: 1rem;
+}
+.footer__links__link a:hover {
+  font-weight: 500;
 }

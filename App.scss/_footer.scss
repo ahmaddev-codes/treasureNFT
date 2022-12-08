@@ -1,0 +1,42 @@
+.footer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: flex-start;
+  padding-top: 4.5rem;
+  padding-bottom: 6rem;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 10rem;
+
+    p {
+      line-height: 1.65rem;
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+
+      a {
+        font-size: 1rem;
+
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
