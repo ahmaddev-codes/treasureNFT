@@ -1,0 +1,96 @@
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-image: url("../images/newsletter_avatar.png");
+  backdrop-filter: blur(15px);
+  --webkit-backdrop-filter: blur(15px);
+  background-size: cover;
+  background: rgba(232, 217, 246, 0.83);
+  user-select: none;
+
+  @include breakpoint_down(small) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  img {
+    width: 23rem;
+    height: 23rem;
+    margin-left: 5rem;
+
+    @include breakpoint_down(small) {
+      width: 15rem;
+      height: 15rem;
+      margin-left: 0;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 2rem;
+
+    @include breakpoint_down(small) {
+      text-align: center;
+    }
+
+    h2 {
+      font-family: $syne;
+      font-weight: 600;
+      font-size: 2.5rem;
+
+      @include breakpoint_down(small) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      padding-bottom: 1rem;
+      line-height: 1.65rem;
+
+      @include breakpoint_down(small) {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+      }
+    }
+
+    form {
+
+      @include breakpoint_down(small) {
+        margin-bottom: 1rem;
+      }
+
+      input {
+        width: 17rem;
+        padding: 0.5rem;
+        border: 1px solid $text-color;
+        border-radius: 0.275rem;
+        outline: none;
+        font-family: $montserrat;
+
+        @include breakpoint_down(small) {
+          width: 12rem;
+        }
+
+        &::placeholder {
+          font-family: $montserrat;
+        }
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        font-family: $montserrat;
+        background: $primary-color;
+        color: $white;
+        border: 2px solid $primary-color;
+        outline: none;
+        border-radius: 0.275rem;
+      }
+    }
+  }
+}

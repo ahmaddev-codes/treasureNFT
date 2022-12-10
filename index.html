@@ -17,7 +17,7 @@
     </head>
 
     <body>
-      <header class="header padding__lg">
+      <header class="header padding__lg padding__md padding__sm">
         <img class="header__image" src="./images/logo.svg" alt="Logo Image">
 
         <nav class="header__nav">
@@ -28,15 +28,28 @@
         </nav>
 
         <div class="header__cta">
-          <input type="text" name="search" placeholder="press enter to search...">
+          <input type="search" name="search" placeholder="press enter to search...">
           <img src="./icons/search-normal.svg" alt="search">
           <a class="btn" href="#">
             connect wallet
           </a>
         </div>
+
+        <a class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__overlay">
+          <a href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Collection</a>
+          <a href="#">Marketplace</a>
+        </div>
       </header>
 
-      <section class="hero padding__lg">
+      <section class="hero padding__lg padding__md padding__sm">
         <div class="hero__details">
           <h1>
             Explore, Collect and Sell Treasured NFTs Worldwide
@@ -49,6 +62,11 @@
           <div class="hero__details__button">
             <a class="btn" href="">Explore</a>
             <a class="btn__transparent" href="">Create NFT</a>
+          </div>
+
+          <div class="hero__details__mobile__image">
+            <img src="./images/asset 1.png" alt="asset1">
+            <img src="./images/asset 2.png" alt="asset2">
           </div>
 
           <div class="hero__details__rating">
@@ -95,14 +113,14 @@
           </article>
 
           <div class="hero__image__arrow">
-            <img src="./icons/arrow.jpg" alt="arrow">
+            <img src="./icons/arrow.svg" alt="arrow">
   
-            <img src="./icons/arrow.jpg" alt="arrow">
+            <img src="./icons/arrow.svg" alt="arrow">
           </div>
         </div>
 
         <a href="#" id="BTT">
-          <img src="./icons/arrow.jpg" alt="back to top">
+          <img src="./icons/arrow.svg" alt="back to top">
 
           <h3>Back to Top</h3>
         </a>
@@ -125,7 +143,7 @@
         </div>
       </section>
 
-      <section class="collections padding__lg">
+      <section class="collections padding__md padding__lg padding__sm">
         <div class="collections__heading">
           <h2>Best Artwork <br>Collections</h2>
 
@@ -194,12 +212,12 @@
             <div class="collections__content__card__details">
               <div>
                 <p>Current Bid</p>
-                <p id="bid1"></p>
+                <p id="bid3"></p>
               </div>
 
               <div>
                 <p>Remaining time</p>
-                <p id="asset1"></p>
+                <p id="asset3"></p>
               </div>
             </div>
 
@@ -219,12 +237,12 @@
             <div class="collections__content__card__details">
               <div>
                 <p>Current Bid</p>
-                <p id="bid1"></p>
+                <p id="bid4"></p>
               </div>
 
               <div>
                 <p>Remaining time</p>
-                <p id="asset1"></p>
+                <p id="asset4"></p>
               </div>
             </div>
 
@@ -244,12 +262,12 @@
             <div class="collections__content__card__details">
               <div>
                 <p>Current Bid</p>
-                <p id="bid1"></p>
+                <p id="bid5"></p>
               </div>
 
               <div>
                 <p>Remaining time</p>
-                <p id="asset1"></p>
+                <p id="asset5"></p>
               </div>
             </div>
 
@@ -269,12 +287,12 @@
             <div class="collections__content__card__details">
               <div>
                 <p>Current Bid</p>
-                <p id="bid1"></p>
+                <p id="bid6'"></p>
               </div>
 
               <div>
                 <p>Remaining time</p>
-                <p id="asset1"></p>
+                <p id="asset6'"></p>
               </div>
             </div>
 
@@ -294,12 +312,12 @@
             <div class="collections__content__card__details">
               <div>
                 <p>Current Bid</p>
-                <p id="bid1"></p>
+                <p id="bid7"></p>
               </div>
 
               <div>
                 <p>Remaining time</p>
-                <p id="asset1"></p>
+                <p id="asset7"></p>
               </div>
             </div>
 
@@ -319,12 +337,12 @@
             <div class="collections__content__card__details">
               <div>
                 <p>Current Bid</p>
-                <p id="bid1"></p>
+                <p id="bid8"></p>
               </div>
 
               <div>
                 <p>Remaining time</p>
-                <p id="asset1"></p>
+                <p id="asset8"></p>
               </div>
             </div>
 
@@ -335,7 +353,7 @@
         </div>
       </section>
 
-      <section class="explore padding__lg">
+      <section class="explore padding__lg padding__md padding__sm">
         <h2>Explore the best <br>NFT asset</h3>
 
         <div class="explore__options">
@@ -388,7 +406,156 @@
           <img src="./images/asset 22.png" alt="asset22">
         </div>
       </section>
+
+      <section class="createNFT padding__lg padding__md padding__sm">
+        <h2>Create and Sell your NFTs</h2>
+
+        <p>List your Non Fungible Tokens for sale.<br>Gain access to your money anywhere, at anytime, whenever it's paid.</p>
+
+        <div class="createNFT__cards">
+          <div class="createNFT__cards__card">
+            <img src="./icons/card.png" alt="wallet">
+            <h4>Set up your wallet</h4>
+            <p>Create a wallet that holds your money with security assurance. 
+              Gain access to it anytime.</p>
+            </div>
+
+          <div class="createNFT__cards__card">
+            <img src="./icons/cloud-upload.png" alt="upload">
+            <h4>Upload & Create Collection</h4>
+            <p>Upload your collection of NFTs available for sale 
+              and choose any of our minting processes and partners.</p>
+            </div>
+
+          <div class="createNFT__cards__card">
+            <img src="./icons/file.png" alt="file">
+            <h4>List them for sale</h4>
+            <p>List your Tokens for sale and watch it make you rich.
+              Go get that bag.</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="topartists padding__lg padding__md padding__sm">
+        <h2>Top NFT Artists</h2>
+        <p>Our all time greatest collectors</p>
+
+        <div class="topartists__cards swiper">
+          <div class="topartists__cards__card swiper-slide">
+            <img src="./images/testimony3.png" alt="Adam Eve">
+
+            <div class="topartists__cards__card__details">
+              <div class="topartists__cards__card__details__text">
+                <h4>Adam Eve</h3>
+                <p>30 Artworks</p>
+                <p><strong>21.90Eth</strong></p>
+              </div>
+
+              <a href="#">
+                Follow
+              </a>
+            </div>
+          </div>
+
+          <div class="topartists__cards__card swiper-slide">
+            <img src="./images/testimony1.png" alt="Adam Eve">
+
+            <div class="topartists__cards__card__details">
+              <div class="topartists__cards__card__details__text">
+                <h4>Elizabeth Mood</h3>
+                <p>23 Artworks</p>
+                <p><strong>18.20Eth</strong></p>
+              </div>
+
+              <a href="#">
+                Follow
+              </a>
+            </div>
+          </div>
+
+          <div class="topartists__cards__card swiper-slide">
+            <img src="./images/testimony2.png" alt="Adam Eve">
+
+            <div class="topartists__cards__card__details">
+              <div class="topartists__cards__card__details__text">
+                <h4>Ada Nol</h3>
+                <p>18 Artworks</p>
+                <p><strong>12.50Eth</strong></p>
+              </div>
+
+              <a href="#">
+                Follow
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="newsletter padding__lg padding__md padding__sm">
+        <img src="./images/newsletter_avatar.png" alt="subscribe to newsletter">
+
+        <div class="newsletter__details">
+          <h2>Subscribe to get the latest news about our NFT collections</h2>
+          <p>Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.
+            Tincidunt id nibh orci nibh justo. 
+          </p>
+          <form onsubmit="Message()" class="newsletter__details__form">
+            <input type="email" name="email" placeholder="Write email here">
+            <button type="submit">
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer padding__lg padding__md padding__sm">
+        <article class="footer__main">
+          <img src="./images/logo.svg" alt="">
+          <p>A platform where buyers and sellers can exchange unique artwork from over 1000 artists</p>
+          <div class="footer__main__social">
+            <img src="./icons/whatsapp.svg" alt="whatsapp">
+            <img src="./icons/facebook.svg" alt="facebook">
+            <img src="./icons/instagram.svg" alt="instagram">
+            <img src="./icons/youtube.svg" alt="youtube">
+          </div>
+        </article>
+
+        <div class="footer__links">
+          <div class="footer__links__link">
+            <h4>Marketplace</h4>
+            <a href="#">Explore</a>
+            <a href="#">NFTs</a>
+            <a href="#">Collectibles</a>
+            <a href="#">Virtual Reality</a>
+          </div>
+
+          <div class="footer__links__link">
+            <h4>Resources</h4>
+            <a href="#">Help center</a>
+            <a href="#">Partners</a>
+            <a href="#">Blog</a>
+            <a href="#">Newsletter</a>
+          </div>
+
+          <div class="footer__links__link">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Support</a>
+            <a href="#newsletter">Newsletter</a>
+          </div>
+        </div>
+
+        <div class="footer__credit">
+          <p>Copyright 2022 Treasure, All right reserved.</p>
+          <div class="footer__credit__extra">
+            <a>Privacy Policy</a>
+            <a>Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
       <script src="./App.js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </body>
     
   </html>

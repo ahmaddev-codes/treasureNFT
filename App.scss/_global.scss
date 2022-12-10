@@ -30,7 +30,26 @@ a {
   border-radius: 0.3125rem;
 }
 
+.padding__sm {
+
+  @include breakpoint_down(small) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.padding__md {
+
+  @include breakpoint_up(medium) {
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+  }
+}
+
 .padding__lg {
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
+
+  @include breakpoint_up(large) {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
 }

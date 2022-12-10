@@ -5,22 +5,44 @@
   justify-content: flex-start;
   gap: 2rem;
 
+  @include breakpoint_down(small) {
+    gap: 1rem;
+  }
+
   h2 {
     font-family: $syne;
     font-weight: 600;
     font-size: 2.5rem;
+
+    @include breakpoint_down(small) {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
   }
 
   &__options {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     width: 100%;
+
+    @include breakpoint_down(small) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.475rem;
+    }
 
     a {
       padding: 0.4rem 1rem;
       font-weight: 500;
       transition: all 300ms ease;
+      text-align: center;
+
+      @include breakpoint_down(small) {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.475rem;
+      }
 
       &:hover {
         background: $primary-color;
@@ -34,11 +56,27 @@
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
     gap: 0.5rem;
+    justify-items: center;
+
+    @include breakpoint_down(small) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.3rem;
+
+      img:nth-of-type(8) {
+        display: none;
+      }
+    }
 
     img {
       width: 12.6875rem;
       height: 12.3125rem;
       border-radius: 0.3125rem;
+
+      @include breakpoint_down(small) {
+        width: 6.8rem;
+        height: 6.8rem;
+        border-radius: 0.125rem;
+      }      
     }
 
     &__divided {
@@ -46,11 +84,22 @@
       grid-template-columns: 1fr;
       width: 100%;
       gap: 0.5rem;
+      justify-items: center;
+
+      @include breakpoint_down(small) {
+        gap: 0.3rem;
+      }
 
       img {
         width: 12.6875rem;
         height: 5.66rem;
         border-radius: 0.3125rem;
+
+        @include breakpoint_down(small) {
+          width: 6.8rem;
+          height: 3.2rem;
+          border-radius: 0.125rem;
+        }
       }
     }
   }
