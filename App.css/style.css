@@ -955,8 +955,6 @@ a {
   gap: 2rem;
   border-radius: 0.675rem;
   padding: 1.25rem;
-  --webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
   border-radius: 0.875rem;
   background-image: url("../images/asset 3.png");
   background-size: cover;
@@ -1190,20 +1188,16 @@ a {
   justify-content: space-between;
   width: 80vw;
 }
-@media (max-width: 39.9375em) {
-  .footer__credit p {
-    font-size: 0.675rem;
-  }
+.footer__credit p {
+  font-size: 0.675rem;
 }
 .footer__credit__extra {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
 }
-@media (max-width: 39.9375em) {
-  .footer__credit__extra a {
-    font-size: 0.675rem;
-  }
+.footer__credit__extra a {
+  font-size: 0.675rem;
 }
 .footer__credit__extra a:hover {
   font-weight: 500;
