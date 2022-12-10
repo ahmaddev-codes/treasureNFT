@@ -34,6 +34,19 @@
             connect wallet
           </a>
         </div>
+
+        <a class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__overlay">
+          <a href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Collection</a>
+          <a href="#">Marketplace</a>
+        </div>
       </header>
 
       <section class="hero padding__lg padding__md padding__sm">
@@ -49,6 +62,11 @@
           <div class="hero__details__button">
             <a class="btn" href="">Explore</a>
             <a class="btn__transparent" href="">Create NFT</a>
+          </div>
+
+          <div class="hero__details__mobile__image">
+            <img src="./images/asset 1.png" alt="asset1">
+            <img src="./images/asset 2.png" alt="asset2">
           </div>
 
           <div class="hero__details__rating">
@@ -108,7 +126,7 @@
         </a>
       </section>
 
-      <section class="partners padding__md padding__sm">
+      <section class="partners">
         <h2>Our Partners & investors</h2>
         
         <div class="partners__logo">
@@ -421,8 +439,9 @@
       <section class="topartists padding__lg padding__md padding__sm">
         <h2>Top NFT Artists</h2>
         <p>Our all time greatest collectors</p>
-        <div class="topartists__cards">
-          <div class="topartists__cards__card">
+
+        <div class="topartists__cards swiper">
+          <div class="topartists__cards__card swiper-slide">
             <img src="./images/testimony3.png" alt="Adam Eve">
 
             <div class="topartists__cards__card__details">
@@ -438,7 +457,7 @@
             </div>
           </div>
 
-          <div class="topartists__cards__card">
+          <div class="topartists__cards__card swiper-slide">
             <img src="./images/testimony1.png" alt="Adam Eve">
 
             <div class="topartists__cards__card__details">
@@ -454,7 +473,7 @@
             </div>
           </div>
 
-          <div class="topartists__cards__card">
+          <div class="topartists__cards__card swiper-slide">
             <img src="./images/testimony2.png" alt="Adam Eve">
 
             <div class="topartists__cards__card__details">
@@ -526,8 +545,17 @@
             <a href="#newsletter">Newsletter</a>
           </div>
         </div>
+
+        <div class="footer__credit">
+          <p>Copyright 2022 Treasure, All right reserved.</p>
+          <div class="footer__credit__extra">
+            <a>Privacy Policy</a>
+            <a>Terms & Conditions</a>
+          </div>
+        </div>
       </footer>
       <script src="./App.js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </body>
     
   </html>

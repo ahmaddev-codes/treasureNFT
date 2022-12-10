@@ -1,3 +1,20 @@
+// Open Styles
+var hamburger = document.querySelector(".header__hamburger");
+var header = document.querySelector(".header");
+
+hamburger.addEventListener('click', () => {
+  if(header.classList.contains("open")) {
+    header.classList.remove("open");
+  }
+
+  else {
+    header.classList.add("open");
+  }
+});
+
+/* =========== End of Open Styles =========== */
+
+
 // Set countdown timer
 
 // Set the date we're counting down to for Bid 1
@@ -228,3 +245,20 @@ var x = setInterval(function() {
 function Message() {
   alert("Your mail was successfully submitted");
 }
+
+
+// initialize Swiper
+var swiper = new Swiper(".swiper-wrapper", {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

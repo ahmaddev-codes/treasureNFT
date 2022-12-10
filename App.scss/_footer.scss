@@ -1,10 +1,18 @@
 .footer {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
   align-items: flex-start;
   padding-top: 4.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   user-select: none;
+  gap: 4rem;
+
+  @include breakpoint_down(small) {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
+  }
 
   &__main {
     display: flex;
@@ -12,10 +20,20 @@
     align-items: flex-start;
     justify-content: flex-end;
     gap: 2rem;
-    padding-right: 10rem;
+    padding-right: 7rem;
+
+    @include breakpoint_down(small) {
+      gap: 1rem;
+      padding-right: 0;
+    }
 
     p {
       line-height: 1.65rem;
+
+      @include breakpoint_down(small) {
+        font-size: 0.875rem;
+        line-height: 1.2rem;
+      }
     }
 
     &__social {
@@ -40,15 +58,57 @@
 
       h4 {
         margin-bottom: 1rem;
+
+        @include breakpoint_down(small) {
+          font-size: 0.875rem;
+          margin-bottom: 0.5rem;
+        }
       }
 
       a {
         font-size: 0.875rem;
 
+        @include breakpoint_down(small) {
+          font-size: 0.675rem;
+        }
+
         &:hover {
           font-weight: 500;
         }
       }
+    }
+  }
+
+  &__credit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80vw;
+
+    p {
+
+      @include breakpoint_down(small) {
+        font-size: 0.675rem;
+      }
+    }
+
+    &__extra {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+
+      a {
+
+        @include breakpoint_down(small) {
+          font-size: 0.675rem;
+        }
+
+        &:hover {
+          font-weight: 500;
+        }
+      }
+
+      
     }
   }
 }
