@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: $text-color;
 }

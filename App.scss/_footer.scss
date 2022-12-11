@@ -86,10 +86,7 @@
     width: 80vw;
 
     p {
-
-      @include breakpoint_down(small) {
-        font-size: 0.675rem;
-      }
+      font-size: 0.675rem;
     }
 
     &__extra {
@@ -98,17 +95,12 @@
       gap: 3rem;
 
       a {
-
-        @include breakpoint_down(small) {
-          font-size: 0.675rem;
-        }
+        font-size: 0.675rem;
 
         &:hover {
           font-weight: 500;
         }
       }
-
-      
     }
   }
 }
