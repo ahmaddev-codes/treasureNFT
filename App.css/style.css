@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: #263238;
 }
@@ -458,7 +462,6 @@ a {
   gap: 3rem;
   bottom: 10rem;
   right: -1rem;
-  scroll-behavior: smooth;
   z-index: 2;
 }
 @media (max-width: 39.9375em) {
